@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MediRelief Pro Safety Information">
+    <title>Safety Information - PharmaCare Global</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    
+    <!-- Additional page-specific styles -->
+    <style>
+        .warning-banner {
+            background: linear-gradient(135deg, #f8d7da, #f5c6cb);
+            border: 2px solid #dc3545;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .warning-banner h2 {
+            color: #dc3545;
+            border: none;
+            margin-bottom: 1rem;
+        }
+        .contraindication-list, .interaction-list {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        .contraindication-list li::before { content: "❌ "; }
+        .interaction-list li::before { content: "⚠️ "; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="PharmaCare Logo" class="logo-icon">
+                PharmaCare Global
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">MediRelief Pro</a></li>
+                    <li><a href="clinical-trials.html">Clinical Trials</a></li>
+                    <li><a href="safety.html" class="active">Safety Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="text-primary mb-3">⚠️ Safety Information</h1>
+        
+        <div class="warning-banner">
+            <h2>⚠️ IMPORTANT SAFETY INFORMATION</h2>
+            <p><strong>Read this information carefully before taking MediRelief Pro.</strong></p>
+            <p class="mt-1">Keep this information for future reference. If you have questions, ask your healthcare provider or pharmacist.</p>
+        </div>
+
+        <section class="section">
+            <h2>🚫 Contraindications</h2>
+            <p>Do NOT take MediRelief Pro if you have any of the following:</p>
+            <div class="contraindication-list">
+                <ul>
+                    <li>Known hypersensitivity to Medinophen Complex or any component</li>
+                    <li>Severe hepatic impairment (Child-Pugh Class C)</li>
+                    <li>Active gastrointestinal bleeding</li>
+                    <li>Use within 14 days of MAO inhibitors</li>
+                    <li>Pregnancy (third trimester) - Category D</li>
+                    <li>Children under 18 years of age</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>💊 Drug Interactions</h2>
+            <p>Tell your healthcare provider about all medications you are taking:</p>
+            <div class="interaction-list">
+                <ul>
+                    <li><strong>Warfarin:</strong> May increase anticoagulant effect - monitor INR</li>
+                    <li><strong>SSRIs/SNRIs:</strong> Increased risk of serotonin syndrome</li>
+                    <li><strong>Alcohol:</strong> Enhanced CNS depression - avoid concurrent use</li>
+                    <li><strong>CYP3A4 inhibitors:</strong> May increase MediRelief Pro levels</li>
+                    <li><strong>Other pain medications:</strong> Consult healthcare provider before combining</li>
+                    <li><strong>Blood pressure medications:</strong> May reduce effectiveness</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>⚡ Warnings and Precautions</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>CNS Effects</h3>
+                    <p>May cause drowsiness. Do not drive or operate machinery until you know how this medication affects you.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Hepatotoxicity</h3>
+                    <p>Risk of liver damage. Do not exceed recommended dose. Avoid alcohol.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Renal Impairment</h3>
+                    <p>Dose adjustment may be required for patients with kidney problems.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Elderly Patients</h3>
+                    <p>Start with lower doses. Increased sensitivity to side effects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📞 Reporting Adverse Events</h2>
+            <p>If you experience any side effects, talk to your doctor, pharmacist, or nurse. You can also report side effects directly to:</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>FDA MedWatch</h3>
+                    <p>📞 1-800-FDA-1088</p>
+                    <p>🌐 www.fda.gov/medwatch</p>
+                </div>
+                <div class="info-card">
+                    <h3>PharmaCare Medical Info</h3>
+                    <p>📞 1-800-PHARMA-1</p>
+                    <p>✉️ safety@pharmacareglobal-demo.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>📄 Full Prescribing Information</h2>
+            <p>For complete safety information, please consult the full prescribing information available from your healthcare provider or pharmacist.</p>
+            <div class="warning-box">
+                <strong>Note:</strong> This is a summary of safety information. It does not include all information about MediRelief Pro. Talk to your healthcare provider for complete information.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Product Info</a>
+                <a href="clinical-trials.html">Clinical Trials</a>
+                <a href="safety.html">Safety Information</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <p>© 2025 PharmaCare Global Inc. All rights reserved.</p>
+            <div class="build-info">
+                Deployed with Cloudflare Pages | Build: <span id="build-id">v2.0.0</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
