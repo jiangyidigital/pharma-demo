@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Trials - PharmaCare Global</title>
+    <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #00a86b;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--dark); }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 2rem;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: white; text-decoration: none; }
+        
+        .main-content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        
+        h1 { color: var(--primary); margin-bottom: 2rem; }
+        
+        .trial-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .trial-card h2 { color: var(--primary); margin-bottom: 1rem; }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .recruiting { background: #d4edda; color: #155724; }
+        .completed { background: #cce5ff; color: #004085; }
+        .planned { background: #fff3cd; color: #856404; }
+        
+        .trial-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .detail-item strong { color: var(--primary); }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">💊 PharmaCare Global</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">MediRelief Pro</a></li>
+                    <li><a href="clinical-trials.html">Clinical Trials</a></li>
+                    <li><a href="safety.html">Safety Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1>🔬 Clinical Trials Program</h1>
+        
+        <div class="trial-card">
+            <span class="status-badge recruiting">🟢 Recruiting</span>
+            <h2>RELIEF-2025: Phase III Efficacy Study</h2>
+            <p>A multicenter, randomized, double-blind, placebo-controlled study to evaluate the efficacy and safety of MediRelief Pro in adults with chronic pain.</p>
+            <div class="trial-details">
+                <div class="detail-item"><strong>Trial ID:</strong> NCT05123456</div>
+                <div class="detail-item"><strong>Phase:</strong> Phase III</div>
+                <div class="detail-item"><strong>Enrollment:</strong> 2,500 participants</div>
+                <div class="detail-item"><strong>Locations:</strong> 45 sites globally</div>
+                <div class="detail-item"><strong>Start Date:</strong> March 2025</div>
+                <div class="detail-item"><strong>Est. Completion:</strong> December 2026</div>
+            </div>
+        </div>
+
+        <div class="trial-card">
+            <span class="status-badge planned">📋 Planned</span>
+            <h2>RELIEF-PEDS: Pediatric Safety Study</h2>
+            <p>Planned Phase II study to evaluate safety and pharmacokinetics in adolescents aged 12-17.</p>
+            <div class="trial-details">
+                <div class="detail-item"><strong>Trial ID:</strong> Pending</div>
+                <div class="detail-item"><strong>Phase:</strong> Phase II</div>
+                <div class="detail-item"><strong>Enrollment:</strong> 500 participants</div>
+                <div class="detail-item"><strong>Est. Start:</strong> Q2 2026</div>
+            </div>
+        </div>
+
+        <div class="trial-card">
+            <span class="status-badge completed">✅ Completed</span>
+            <h2>RELIEF-2023: Pivotal Efficacy Trial</h2>
+            <p>Successfully completed Phase III trial demonstrating significant pain reduction. Results published in peer-reviewed journals.</p>
+            <div class="trial-details">
+                <div class="detail-item"><strong>Trial ID:</strong> NCT04987654</div>
+                <div class="detail-item"><strong>Participants:</strong> 1,850</div>
+                <div class="detail-item"><strong>Primary Endpoint:</strong> Met (p < 0.001)</div>
+                <div class="detail-item"><strong>Completed:</strong> August 2024</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 PharmaCare Global Inc. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Demonstration website for educational purposes.</p>
+    </footer>
+</body>
+</html>

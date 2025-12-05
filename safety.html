@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Information - PharmaCare Global</title>
+    <style>
+        :root { --primary: #0066cc; --secondary: #00a86b; --dark: #1a1a2e; --warning: #dc3545; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--dark); }
+        header { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; padding: 1rem 2rem; }
+        .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: white; text-decoration: none; }
+        .main-content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        h1 { color: var(--primary); margin-bottom: 2rem; }
+        
+        .warning-banner {
+            background: #f8d7da;
+            border: 2px solid var(--warning);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .warning-banner h2 { color: var(--warning); margin-bottom: 1rem; }
+        
+        .section { margin-bottom: 2rem; }
+        .section h2 { color: var(--primary); border-bottom: 2px solid var(--secondary); padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        
+        .contraindication-list, .interaction-list {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        
+        .contraindication-list li, .interaction-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .contraindication-list li::before { content: "❌"; position: absolute; left: 0; }
+        .interaction-list li::before { content: "⚠️"; position: absolute; left: 0; }
+        
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">💊 PharmaCare Global</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">MediRelief Pro</a></li>
+                    <li><a href="clinical-trials.html">Clinical Trials</a></li>
+                    <li><a href="safety.html">Safety Info</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1>⚠️ Safety Information</h1>
+        
+        <div class="warning-banner">
+            <h2>IMPORTANT SAFETY INFORMATION</h2>
+            <p><strong>Read this information carefully before taking MediRelief Pro.</strong></p>
+            <p>Keep this information for future reference. If you have questions, ask your healthcare provider or pharmacist.</p>
+        </div>
+
+        <section class="section">
+            <h2>Contraindications</h2>
+            <div class="contraindication-list">
+                <ul>
+                    <li>Known hypersensitivity to Medinophen Complex or any component</li>
+                    <li>Severe hepatic impairment (Child-Pugh Class C)</li>
+                    <li>Active gastrointestinal bleeding</li>
+                    <li>Use within 14 days of MAO inhibitors</li>
+                    <li>Pregnancy (third trimester) - Category D</li>
+                    <li>Children under 18 years of age</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Drug Interactions</h2>
+            <div class="interaction-list">
+                <ul>
+                    <li><strong>Warfarin:</strong> May increase anticoagulant effect - monitor INR</li>
+                    <li><strong>SSRIs/SNRIs:</strong> Increased risk of serotonin syndrome</li>
+                    <li><strong>Alcohol:</strong> Enhanced CNS depression - avoid concurrent use</li>
+                    <li><strong>CYP3A4 inhibitors:</strong> May increase MediRelief Pro levels</li>
+                    <li><strong>Other pain medications:</strong> Consult healthcare provider before combining</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Warnings and Precautions</h2>
+            <ul>
+                <li>May cause drowsiness - do not drive or operate machinery until you know how this medication affects you</li>
+                <li>Hepatotoxicity risk - do not exceed recommended dose</li>
+                <li>Renal impairment - dose adjustment may be required</li>
+                <li>Elderly patients - start with lower doses</li>
+                <li>Report any unusual symptoms to your healthcare provider immediately</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Reporting Adverse Events</h2>
+            <p>If you experience any side effects, talk to your doctor, pharmacist, or nurse. You can also report side effects directly to:</p>
+            <ul>
+                <li>FDA MedWatch: 1-800-FDA-1088</li>
+                <li>PharmaCare Global Medical Information: 1-800-PHARMA-1</li>
+                <li>Email: safety@pharmacareglobal-demo.com</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 PharmaCare Global Inc. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Demonstration website for educational purposes.</p>
+    </footer>
+</body>
+</html>
